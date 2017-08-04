@@ -2,9 +2,15 @@ $(document).ready(function(){
 
 	$('#view-more').click(function() {
 	    $('.mas-cajas').toggleClass( "aparecer");
-	    $('#view-more').html("Show less")
-  }
-);
+	    $('#view-more').hide();
+	    $('#view-less').show();
+	});
+
+	$('#view-less').click(function() {
+		$('.mas-cajas').toggleClass( "desaparecer");
+		$('#view-more').show();
+		$(this).hide();
+	});
 	/*
 	$('#view-more').click(function() {
 		$('.mas-cajas').show();

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
@@ -19,8 +20,8 @@
 			      <ul class="right hide-on-med-and-down">
 			        <li><a class="dropdown-button gris" href="#!" data-activates="dropdown1" data-beloworigin="true" data-constrainWidth="false">ABOUT</a></li>
 			        <li><a class="dropdown-button gris" href="#!" data-activates="dropdown2" data-beloworigin="true" data-constrainWidth="false">SKILLS</a></li>
-			        <li><a class="gris" href="collapsible.html">PORTFOLIO</a></li>
-			        <li><a class="gris" href="mobile.html">CONTACT</a></li>
+			        <li><a class="gris" href="#portfolio">PORTFOLIO</a></li>
+			        <li><a class="gris" href="#contact">CONTACT</a></li>
 			      </ul>
 			      <ul class="side-nav" id="mobile-demo">
 			        <li><a href="#">FEATURES</a></li>
@@ -35,7 +36,7 @@
 	</div>
 
 	<section class="header">
-		<h1 class="center">Berenisse</h1>
+	
 	</section>
 
 	<section class="about">
@@ -44,13 +45,21 @@
 
 	<section class="about">
 		<h1 class="center">Tools & Skills</h1>
+		<i class="devicon-css3-plain colored"></i>
+		<i class="devicon-gulp-plain colored"></i>
+		<i class="devicon-html5-plain colored"></i>
+		<i class="devicon-jquery-plain colored"></i>
+		<i class="devicon-sass-original colored"></i>
+		<i class="devicon-trello-plain colored"></i>
+		<i class="devicon-wordpress-plain colored"></i>
 	</section>
 
-	<div class="portfolio">
-		<!-- Top Navigation -->
+	<div class="portfolio" id="portfolio">
+		<!-- Top Navigation 
 		<header class="codrops-header">
 			<h1>Portfolio</h1>	
-		</header>
+		</header>-->
+		<h1 class="center">Portfolio</h1>
 		<section id="grid" class="grid clearfix">
 			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="arriba">
 				<figure>
@@ -58,7 +67,7 @@
 					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
 					<figcaption>
 						<h2>Pinterest</h2>
-						<p>Soko radicchio bunya nuts gram dulse.</p>
+						<p>Modest replica of Pinterest</p>
 						<button>Demo</button>
 						<button class="btn-code">Code</button>
 					</figcaption>
@@ -132,17 +141,26 @@
 		<div class="row center mt-50">
 			<div class="codrops-demos col l12 m12 s12">
 				<a id="view-more">View more</a>
+				<a id="view-less" class="desaparecer">View less</a>
 			</div>
 		</div>
-		
 	</div><!-- /container -->
 
-	<section class="about">
+	<section class="about center" id="contact">
 		<h1 class="center">Contact Me</h1>
+		<h6>You can reach me or see more of my work here:</h6>
+		<i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+		<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+		<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+	</section>
+
+	<section class="pie">
+		<p class="center">Berenisse Rios | 2017</p>
 	</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
 	<script src="assets/js/snap.svg-min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>

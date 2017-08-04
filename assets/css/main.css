@@ -17,7 +17,10 @@ nav {
     font-size: 12px; }
 
 .header {
-  background-color: #BFB5AA;
+  /*background-color: #BFB5AA;*/
+  background-image: url(../img/portafolio-1.jpg);
+  background: cover;
+  background-size: 100%;
   height: 100vh;
   padding: 150px;
   margin-top: -64px; }
@@ -37,6 +40,14 @@ nav {
 .aparecer {
   display: inherit; }
 
+.desaparecer {
+  display: none; }
+
+.pie {
+  background-color: #87888C;
+  color: #fff;
+  padding: 15px 0; }
+
 /* Demos.css*/
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -49,6 +60,9 @@ a, button {
 a {
   color: #f0f0f0;
   text-decoration: none;
+  cursor: pointer; }
+
+i {
   cursor: pointer; }
 
 a:hover, a:focus {
@@ -205,7 +219,7 @@ a:hover, a:focus {
   top: 40%;
   left: 50%;
   border: 3px solid #fff;
-  background: transparent;
+  background: #87888C;
   color: #fff;
   opacity: 0;
   -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
@@ -215,7 +229,7 @@ a:hover, a:focus {
   top: 60%;
   left: 50%;
   border: 3px solid #fff;
-  background: transparent;
+  background: #87888C;
   color: #fff;
   opacity: 0;
   -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
