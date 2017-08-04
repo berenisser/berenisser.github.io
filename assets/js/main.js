@@ -1,5 +1,21 @@
-(function() {
+$(document).ready(function(){
 
+	$('#view-more').click(function() {
+	    $('.mas-cajas').toggleClass( "aparecer");
+	    $('#view-more').html("Show less")
+  }
+);
+	/*
+	$('#view-more').click(function() {
+		$('.mas-cajas').show();
+		$('#view-more').html("Show less").click(function(event) {
+			$('.mas-cajas').hide();
+		});;
+	}); */
+}); 
+
+//SVG path animation
+(function() {
 	function init() {
 		var speed = 250,
 			easing = mina.easeinout;
