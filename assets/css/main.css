@@ -14,7 +14,8 @@ nav {
   nav .brand-logo {
     font-size: 18px; }
   nav .nav-wrapper li a {
-    font-size: 12px; }
+    font-size: 12px;
+    color: black; }
 
 .header {
   /*background-color: #BFB5AA;*/
@@ -80,33 +81,30 @@ a:hover, a:focus {
   margin: 0 auto;
   padding: 2em;
   text-align: center; }
-
-.codrops-header h1 {
-  margin: 0;
-  font-weight: 300;
-  font-size: 2.5em;
-  line-height: 1.3; }
+  .codrops-header h1 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.3; }
 
 /* Demo Buttons Style */
 .codrops-demos {
   padding-top: 1em;
   font-size: 0.8em; }
-
-.codrops-demos a {
-  display: inline-block;
-  margin: 0.5em;
-  padding: 0.7em 1.1em;
-  outline: none;
-  border: 2px solid #333;
-  color: #333;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700; }
-
-.codrops-demos a:hover {
-  border-color: #fff;
-  color: #fff; }
+  .codrops-demos a {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.7em 1.1em;
+    outline: none;
+    border: 2px solid #333;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700; }
+  .codrops-demos:hover {
+    border-color: #fff;
+    color: #fff; }
 
 /* component.css */
 /* Common style */
@@ -114,70 +112,62 @@ a:hover, a:focus {
   margin: 40px auto 0;
   max-width: 999px;
   width: 90%; }
-
-.grid a {
-  float: left;
-  max-width: 333px;
-  width: 33.333333%;
-  color: #333; }
-
-.grid .arriba {
-  margin: 30px 0 -30px 0; }
-
-.grid figure {
-  position: relative;
-  overflow: hidden;
-  margin: 5px;
-  background: #333; }
-
-.grid figure img {
-  position: relative;
-  display: block;
-  width: 100%;
-  opacity: 0.7;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
-
-.grid figcaption {
-  position: absolute;
-  top: 0;
-  z-index: 11;
-  padding: 14px;
-  width: 100%;
-  height: 100%;
-  text-align: center; }
-
-.grid figcaption h2 {
-  margin: 0 0 20px 0;
-  color: #F4D131;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 120%;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s; }
-
-.grid figcaption p {
-  padding: 0 20px;
-  color: #434446;
-  font-weight: 300;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s; }
+  .grid a {
+    float: left;
+    max-width: 333px;
+    width: 33.333333%;
+    color: #333; }
+  .grid .arriba {
+    margin: 30px 0 -30px 0; }
+  .grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    background: #333; }
+    .grid figure img {
+      position: relative;
+      display: block;
+      width: 100%;
+      opacity: 0.7;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+    .grid figure button {
+      position: absolute;
+      padding: 4px 20px;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, transform 0.3s; }
+  .grid figcaption {
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    padding: 14px;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .grid figcaption h2 {
+      margin: 0 0 20px 0;
+      color: #F4D131;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 120%;
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: transform 0.3s; }
+    .grid figcaption p {
+      padding: 0 20px;
+      color: #434446;
+      font-weight: 300;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, transform 0.3s; }
 
 .grid figcaption h2,
 .grid figcaption p {
   -webkit-transform: translateY(25px);
   transform: translateY(25px); }
-
-.grid figure button {
-  position: absolute;
-  padding: 4px 20px;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s; }
 
 .grid figcaption,
 .grid figcaption h2,
