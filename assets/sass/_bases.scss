@@ -28,17 +28,62 @@ nav{
 	background-image: url(../img/portafolio-1.jpg);
 	background: cover;
 	background-size: 100%;
+	background-repeat: none;
 	height: 100vh;
 	padding: 150px;
 	margin-top: -64px;
-	h1{
-		margin: 0;
-	}
+}
+
+.spacio{
+	height: 30px;
 }
 
 .about{
-	background-color: #fff;
-	padding: 150px;
+	background-color: #cdada2;
+	padding: 120px 0;
+}
+
+.contact{
+	padding: 170px 0;
+	h1{
+		margin-top: 100px;
+	}
+}
+
+.skills{
+	padding: 150px 0;
+	h1{
+		padding-top: 50px;
+	}
+	i{
+		font-size: 70px;
+		margin: 10px;
+	}
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 50px solid #fff;
+	z-index: 3000;
+	margin: 0 auto;
+	position: relative;
+	margin-top: -50px;
+}
+
+.amarillo{
+	border-top: 50px solid #cdada2;
+	margin-top: -170px;
+}
+
+.about-triangle{
+	margin-top: -120px;
+}
+
+.triangle-skills{
+	margin-top: -150px;
 }
 
 .mt-50{
@@ -242,7 +287,7 @@ a:hover, a:focus {
 
 /* Individual styles */
 .portfolio {
-	background: #F4D131;
+	background: #cdada2;
 	padding: 50px 0;
 }
 
