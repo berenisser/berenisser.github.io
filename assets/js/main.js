@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 
 	//This initializes the animation effect on scroll down or up
-	AOS.init();
+	
 	/*
 	$('#view-more').click(function() {
 		$('.mas-cajas').show();

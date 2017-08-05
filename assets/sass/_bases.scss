@@ -32,15 +32,28 @@ nav{
 	height: 100vh;
 	padding: 150px;
 	margin-top: -64px;
-}
-
-.spacio{
-	height: 30px;
+	.square{
+		width: 800px;
+		height: 600px;
+		border: 5px solid #fff;
+		margin: 0 auto;
+	}
+	img{
+		width: 25%;
+		float: left;
+	}
 }
 
 .about{
 	background-color: #cdada2;
 	padding: 120px 0;
+	p{
+		font-size: 20px;
+		
+	}
+	span{
+		font-size: 30px;
+	}
 }
 
 .contact{

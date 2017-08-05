@@ -20,8 +20,8 @@
 			      <a href="#!" class="brand-logo gris">BR</a>
 			      <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons gris">menu</i></a>
 			      <ul class="right hide-on-med-and-down">
-			        <li><a class="dropdown-button gris" href="#!" data-activates="dropdown1" data-beloworigin="true" data-constrainWidth="false">ABOUT</a></li>
-			        <li><a class="dropdown-button gris" href="#!" data-activates="dropdown2" data-beloworigin="true" data-constrainWidth="false">SKILLS</a></li>
+			        <li><a class="gris" href="#about">ABOUT</a></li>
+			        <li><a class="gris" href="#skills">SKILLS</a></li>
 			        <li><a class="gris" href="#portfolio">PORTFOLIO</a></li>
 			        <li><a class="gris" href="#contact">CONTACT</a></li>
 			      </ul>
@@ -37,124 +37,110 @@
 		</nav>
 	</div>
 
-	<section class="header">
-	
+	<section class="header center">
+		<div class="square">
+			<img class="responsive-img" src="assets/img/bere-logo.png" alt="logo">
+		</div>
 	</section>
 
-	<div class="spacio"></div>
-
-	<section class="about center">
-		<div class="triangle about-triangle"></div>
-		<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-			<h1 class="about-title">About Me</h1>
-			<div class="row">
-				<div class="col l6 offset-l3 m12 12">
-					I am passionate about technology, continuous learning and collaboration. I am detailed oriented and work well under pressure. I can communicate well between parties and enjoy facing new challenges because they allow me to continuously improve myself and my skills. In my free time you can find me either taking Japanese courses or reading articles about entrepreneurship.
-				</div>
+	<section id="about" class="about center">
+		<div class="row">
+			<div class="col l8 offset-l2 m12 12">
+				<p>I'm <span>Berenisse Rios</span> a <span>front-end developer </span> from Miami, FL based in <span>Santiago</span>. I am passionate about technology, continuous learning and collaboration. I am detailed oriented and work well under pressure. I can <span>communicate</span> well between groups and enjoy facing new <span>challenges</span> because I can improve myself and my skills. In my free time you can find me either taking Japanese courses, reading articles about entrepreneurship or eating hummus with pita chips.</p>
 			</div>
 		</div>
 	</section>
 
-	<section class="skills center">
-			<div class="triangle amarillo triangle-skills"></div>
-		<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-			<h1 class="center">Tools & Skills</h1>
-			<i class="devicon-css3-plain colored"></i>
-			<i class="devicon-gulp-plain colored"></i>
-			<i class="devicon-html5-plain colored"></i>
-			<i class="devicon-jquery-plain colored"></i>
-			<i class="devicon-sass-original colored"></i>
-			<i class="devicon-trello-plain colored"></i>
-			<i class="devicon-wordpress-plain colored"></i>
-		</div>
+	<section id="skills" class="skills center">
+		<div class="triangle amarillo triangle-skills"></div>
+		<h1 class="center">Tools & Skills</h1>
+		<i class="devicon-css3-plain colored"></i>
+		<i class="devicon-gulp-plain colored"></i>
+		<i class="devicon-html5-plain colored"></i>
+		<i class="devicon-jquery-plain colored"></i>
+		<i class="devicon-sass-original colored"></i>
+		<i class="devicon-trello-plain colored"></i>
+		<i class="devicon-wordpress-plain colored"></i>
 	</section>
 
 	<div class="portfolio" id="portfolio">
-		<!-- Top Navigation 
-		<header class="codrops-header">
-			<h1>Portfolio</h1>	
-		</header>-->
 		<div class="triangle"></div>
-		<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-			<h1 class="center">Portfolio</h1>
-		</div>
+		<h1 class="center">Portfolio</h1>
+		
 		<section id="grid" class="grid clearfix">
-			<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="arriba">
-					<figure>
-						<img src="assets/img/kiva.png"/>
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-						<figcaption>
-							<h2>Pinterest</h2>
-							<p>Modest replica of Pinterest</p>
-							<button>Demo</button>
-							<button class="btn-code">Code</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" >
-					<figure>
-						<img src="assets/img/kiva.png"/>
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-						<figcaption>
-							<h2>PhotoLab</h2>
-							<p>Two greens tigernut soybean radish.</p>
-							<button>Demo</button>
-							<button class="btn-code">Code</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="arriba">
-					<figure>
-						<img src="assets/img/kiva.png"/>
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-						<figcaption>
-							<h2>Kiva Gourmet</h2>
-							<p>Beetroot water spinach okra water.</p>
-							<button>Demo</button>
-							<button class="btn-code">Code</button>
-						</figcaption>
-					</figure>
-				</a>
-			</div>
-			<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">	 
-				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas arriba">
-					<figure>
-						<img src="assets/img/kiva.png"/>
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-						<figcaption>
-							<h2>Pinterest</h2>
-							<p>Soko radicchio bunya nuts gram dulse.</p>
-							<button>Demo</button>
-							<button class="btn-code">Code</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas">
-					<figure>
-						<img src="assets/img/kiva.png"/>
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-						<figcaption>
-							<h2>PhotoLab</h2>
-							<p>Two greens tigernut soybean radish.</p>
-							<button>Demo</button>
-							<button class="btn-code">Code</button>
-						</figcaption>
-					</figure>
-				</a>
-				<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas arriba">
-					<figure>
-						<img src="assets/img/kiva.png"/>
-						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-						<figcaption>
-							<h2>Kiva Gourmet</h2>
-							<p>Beetroot water spinach okra water.</p>
-							<button>Demo</button>
-							<button class="btn-code">Code</button>
-						</figcaption>
-					</figure>
-				</a>
-			</div>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="arriba">
+				<figure>
+					<img src="assets/img/kiva.png"/>
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
+					<figcaption>
+						<h2>Pinterest</h2>
+						<p>Modest replica of Pinterest</p>
+						<button>Demo</button>
+						<button class="btn-code">Code</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" >
+				<figure>
+					<img src="assets/img/kiva.png"/>
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
+					<figcaption>
+						<h2>PhotoLab</h2>
+						<p>Two greens tigernut soybean radish.</p>
+						<button>Demo</button>
+						<button class="btn-code">Code</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="arriba">
+				<figure>
+					<img src="assets/img/kiva.png"/>
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
+					<figcaption>
+						<h2>Kiva Gourmet</h2>
+						<p>Beetroot water spinach okra water.</p>
+						<button>Demo</button>
+						<button class="btn-code">Code</button>
+					</figcaption>
+				</figure>
+			</a>
+		 
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas arriba">
+				<figure>
+					<img src="assets/img/kiva.png"/>
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
+					<figcaption>
+						<h2>Pinterest</h2>
+						<p>Soko radicchio bunya nuts gram dulse.</p>
+						<button>Demo</button>
+						<button class="btn-code">Code</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas">
+				<figure>
+					<img src="assets/img/kiva.png"/>
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
+					<figcaption>
+						<h2>PhotoLab</h2>
+						<p>Two greens tigernut soybean radish.</p>
+						<button>Demo</button>
+						<button class="btn-code">Code</button>
+					</figcaption>
+				</figure>
+			</a>
+			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas arriba">
+				<figure>
+					<img src="assets/img/kiva.png"/>
+					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
+					<figcaption>
+						<h2>Kiva Gourmet</h2>
+						<p>Beetroot water spinach okra water.</p>
+						<button>Demo</button>
+						<button class="btn-code">Code</button>
+					</figcaption>
+				</figure>
+			</a>
 		</section>
 
 		<!-- view more button -->
@@ -168,13 +154,11 @@
 
 	<section class="contact center" id="contact">
 		<div class="triangle amarillo"></div>
-		<div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
-			<h1 class="center">Contact Me</h1>
-			<h6>You can reach me or see more of my work here:</h6>
-			<i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-			<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-			<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-		</div>
+		<h1 class="center">Contact Me</h1>
+		<h6>You can reach me or see more of my work here:</h6>
+		<i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
+		<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+		<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
 	</section>
 
 	<section class="pie">
@@ -183,9 +167,9 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="assets/js/snap.svg-min.js"></script>
 	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 	<script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
-	<script src="assets/js/snap.svg-min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
