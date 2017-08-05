@@ -1,5 +1,6 @@
 * {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 body {
   font-weight: 400;
@@ -30,13 +31,34 @@ nav {
     width: 800px;
     height: 600px;
     border: 5px solid #fff;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 1000; }
   .header img {
     width: 25%;
     float: left; }
+  .header #triangle {
+    width: 0;
+    height: 0;
+    border-top: 700px solid transparent;
+    border-left: 700px solid rgba(0, 131, 126, 0.5);
+    border-bottom: 0 solid transparent;
+    z-index: 300;
+    position: absolute; }
+  .header .triangle-left {
+    top: 50px;
+    left: 0; }
+  .header .rotado-right {
+    border-top: 600px solid transparent;
+    border-left: 600px solid rgba(0, 131, 126, 0.5);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    right: 0;
+    top: 0; }
 
 .about {
-  background-color: #cdada2;
+  background-color: rgba(0, 131, 126, 0.5);
   padding: 120px 0; }
   .about p {
     font-size: 20px; }
@@ -68,7 +90,7 @@ nav {
   margin-top: -50px; }
 
 .amarillo {
-  border-top: 50px solid #cdada2;
+  border-top: 50px solid rgba(0, 131, 126, 0.5);
   margin-top: -170px; }
 
 .about-triangle {

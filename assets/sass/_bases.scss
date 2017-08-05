@@ -1,5 +1,6 @@
 *{
 	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -37,15 +38,40 @@ nav{
 		height: 600px;
 		border: 5px solid #fff;
 		margin: 0 auto;
+		z-index: 1000;
 	}
 	img{
 		width: 25%;
 		float: left;
 	}
+	#triangle {
+		width: 0;
+		height: 0;
+		border-top: 700px solid transparent;
+		border-left: 700px solid rgba(0,131,126, 0.5);
+		border-bottom: 0 solid transparent;
+		z-index: 300;
+		position: absolute;
+		
+	}
+	.triangle-left{
+		top: 50px;
+		left: 0;
+	}
+	.rotado-right{
+		border-top: 600px solid transparent;
+		border-left: 600px solid rgba(0,131,126, 0.5);
+		-moz-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		right: 0;
+		top: 0;
+	}
 }
 
 .about{
-	background-color: #cdada2;
+	background-color: $fondo;
 	padding: 120px 0;
 	p{
 		font-size: 20px;
@@ -87,7 +113,7 @@ nav{
 }
 
 .amarillo{
-	border-top: 50px solid #cdada2;
+	border-top: 50px solid $fondo;
 	margin-top: -170px;
 }
 
