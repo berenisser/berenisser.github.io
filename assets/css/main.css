@@ -23,7 +23,7 @@ nav {
   background-image: url(../img/portafolio-1.jpg);
   background: cover;
   background-size: 100%;
-  background-repeat: none;
+  background-repeat: no-repeat;
   height: 100vh;
   padding: 150px;
   margin-top: -64px; }
@@ -33,23 +33,31 @@ nav {
     border: 5px solid #fff;
     margin: 0 auto;
     z-index: 1000; }
-  .header img {
-    width: 25%;
-    float: left; }
+  .header .logo-bere {
+    height: 18%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    transform: translate3d(-20%, -25%, 0);
+    z-index: 9999; }
+  .header .front {
+    float: right;
+    margin-top: 350px;
+    width: 50%; }
   .header #triangle {
     width: 0;
     height: 0;
-    border-top: 700px solid transparent;
-    border-left: 700px solid rgba(0, 131, 126, 0.5);
     border-bottom: 0 solid transparent;
     z-index: 300;
     position: absolute; }
   .header .triangle-left {
-    top: 50px;
+    border-top: 730px solid transparent;
+    border-left: 730px solid rgba(0, 131, 126, 0.5);
+    top: 70px;
     left: 0; }
   .header .rotado-right {
-    border-top: 600px solid transparent;
-    border-left: 600px solid rgba(0, 131, 126, 0.5);
+    border-top: 656px solid transparent;
+    border-left: 656px solid rgba(0, 131, 126, 0.5);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
