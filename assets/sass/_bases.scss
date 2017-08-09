@@ -28,8 +28,8 @@ nav{
 	/*background-color: #BFB5AA;*/
 	background: url(../img/portafolio-1.jpg) 50% 50% / 100% no-repeat fixed;
 	background: cover;
-	background-size: 100%;
-	background-repeat: no-repeat;
+	background-position: center;
+	//background-size: 100%;
 	height: 100vh;
 	padding: 150px;
 	margin-top: -64px;
@@ -62,13 +62,13 @@ nav{
 	}
 	.triangle-left{
 		border-top: 584px solid transparent;
-		border-left: 584px solid rgba(0,131,126, 0.5);
+		border-left: 584px solid rgba(0,131,126, 0.3);
 		top: 70px;
 		left: 0;
 	}
 	.rotado-right{
 		border-top: 656px solid transparent;
-		border-left: 656px solid rgba(0,131,126, 0.5);
+		border-left: 656px solid rgba(0,131,126, 0.3);
 		-moz-transform: rotate(180deg);
 		-o-transform: rotate(180deg);
 		-webkit-transform: rotate(180deg);
@@ -78,22 +78,33 @@ nav{
 	}
 }
 
+.phrase{
+	padding: 15%;
+}
+
 .about{
 	background-color: $fondo_azul;
-	padding: 120px 0;
-	img{
-		margin-top: -40px;
-		z-index: 9999;
-		width: 40%;
+	.row{
+		margin: 0;
+		.about-text{
+			padding: 8% 5% 5% 5%;
+			margin: 0;
+		}
+		.about-title{
+			margin: 0;
+			padding: 0;
+			img{
+				margin-bottom: -6px;
+			}
+		}
 	}
 	p{
-		font-size: 25px;
+		font-size: 1.5rem;
 		font-family: 'Quicksand', sans-serif;
 		//font-family: 'Julius Sans One', sans-serif;
-		
 	}
 	span{
-		font-size: 30px;
+		font-size: 1.8rem;
 		font-weight: bold;
 	}
 }
@@ -106,14 +117,26 @@ nav{
 }
 
 .skills{
-	padding: 150px 0;
 	background-color: $fondo;
+	.row{
+		margin: 0;
+	}
+	.skills-img{
+		padding: 0;
+		img{
+				margin-bottom: -6px;
+			}
+	}
+	.iconos-skills{
+		padding: 10%;
+	}
 	h1{
 		padding-top: 50px;
 	}
 	i{
-		font-size: 70px;
-		margin: 10px;
+		font-size: 5rem;
+		padding: 20px 10px;
+		color: white;
 	}
 }
 

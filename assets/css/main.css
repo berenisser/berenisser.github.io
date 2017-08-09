@@ -22,8 +22,7 @@ nav {
   /*background-color: #BFB5AA;*/
   background: url(../img/portafolio-1.jpg) 50% 50%/100% no-repeat fixed;
   background: cover;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
   padding: 150px;
   margin-top: -64px; }
@@ -51,12 +50,12 @@ nav {
     position: absolute; }
   .header .triangle-left {
     border-top: 584px solid transparent;
-    border-left: 584px solid rgba(0, 131, 126, 0.5);
+    border-left: 584px solid rgba(0, 131, 126, 0.3);
     top: 70px;
     left: 0; }
   .header .rotado-right {
     border-top: 656px solid transparent;
-    border-left: 656px solid rgba(0, 131, 126, 0.5);
+    border-left: 656px solid rgba(0, 131, 126, 0.3);
     -moz-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -64,18 +63,26 @@ nav {
     right: 0;
     top: 0; }
 
+.phrase {
+  padding: 15%; }
+
 .about {
-  background-color: rgba(0, 131, 126, 0.4);
-  padding: 120px 0; }
-  .about img {
-    margin-top: -40px;
-    z-index: 9999;
-    width: 40%; }
+  background-color: rgba(0, 131, 126, 0.4); }
+  .about .row {
+    margin: 0; }
+    .about .row .about-text {
+      padding: 8% 5% 5% 5%;
+      margin: 0; }
+    .about .row .about-title {
+      margin: 0;
+      padding: 0; }
+      .about .row .about-title img {
+        margin-bottom: -6px; }
   .about p {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif; }
   .about span {
-    font-size: 30px;
+    font-size: 1.8rem;
     font-weight: bold; }
 
 .contact {
@@ -84,13 +91,21 @@ nav {
     margin-top: 100px; }
 
 .skills {
-  padding: 150px 0;
-  background-color: rgba(131, 0, 5, 0.4); }
+  background-color: rgba(131, 0, 5, 0.3); }
+  .skills .row {
+    margin: 0; }
+  .skills .skills-img {
+    padding: 0; }
+    .skills .skills-img img {
+      margin-bottom: -6px; }
+  .skills .iconos-skills {
+    padding: 10%; }
   .skills h1 {
     padding-top: 50px; }
   .skills i {
-    font-size: 70px;
-    margin: 10px; }
+    font-size: 5rem;
+    padding: 20px 10px;
+    color: white; }
 
 .triangle {
   width: 0;
@@ -104,7 +119,7 @@ nav {
   margin-top: -50px; }
 
 .amarillo {
-  border-top: 50px solid rgba(131, 0, 5, 0.4);
+  border-top: 50px solid rgba(131, 0, 5, 0.3);
   margin-top: -170px; }
 
 .about-triangle {
