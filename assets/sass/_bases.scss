@@ -6,7 +6,7 @@
 body {
 	font-weight: 400;
 	font-size: 1em;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 nav{
@@ -26,7 +26,7 @@ nav{
 
 .header{
 	/*background-color: #BFB5AA;*/
-	background-image: url(../img/portafolio-1.jpg);
+	background: url(../img/portafolio-1.jpg) 50% 50% / 100% no-repeat fixed;
 	background: cover;
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -57,13 +57,12 @@ nav{
 		width: 0;
 		height: 0;
 		border-bottom: 0 solid transparent;
-		z-index: 300;
 		position: absolute;
 		
 	}
 	.triangle-left{
-		border-top: 730px solid transparent;
-		border-left: 730px solid rgba(0,131,126, 0.5);
+		border-top: 584px solid transparent;
+		border-left: 584px solid rgba(0,131,126, 0.5);
 		top: 70px;
 		left: 0;
 	}
@@ -80,14 +79,22 @@ nav{
 }
 
 .about{
-	background-color: $fondo;
+	background-color: $fondo_azul;
 	padding: 120px 0;
+	img{
+		margin-top: -40px;
+		z-index: 9999;
+		width: 40%;
+	}
 	p{
-		font-size: 20px;
+		font-size: 25px;
+		font-family: 'Quicksand', sans-serif;
+		//font-family: 'Julius Sans One', sans-serif;
 		
 	}
 	span{
 		font-size: 30px;
+		font-weight: bold;
 	}
 }
 
@@ -100,6 +107,7 @@ nav{
 
 .skills{
 	padding: 150px 0;
+	background-color: $fondo;
 	h1{
 		padding-top: 50px;
 	}
@@ -335,7 +343,7 @@ a:hover, a:focus {
 
 /* Individual styles */
 .portfolio {
-	background: #cdada2;
+	background-color: $fondo_azul;
 	padding: 50px 0;
 }
 
