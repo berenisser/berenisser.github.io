@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Berenisse</title>
+	<title>Berenisse | Portfolio</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
 	<!-- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet"> -->
-	
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -21,31 +21,35 @@
 		    <div class="nav-wrapper">
 				<div class="row-nav">
 			      <a href="#!" class="brand-logo gris"></a>
-			      <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons gris">menu</i></a>
-			      <ul class="right hide-on-med-and-down">
-			        <li><a class="gris" href="#about">ABOUT</a></li>
-			        <li><a class="gris" href="#skills">SKILLS</a></li>
-			        <li><a class="gris" href="#portfolio">PORTFOLIO</a></li>
-			        <li><a class="gris" href="#contact">CONTACT</a></li>
-			      </ul>
-			      <ul class="side-nav" id="mobile-demo">
-			        <li><a href="#">FEATURES</a></li>
-			        <li><a href="#">SECTIONS</a></li>
-			        <li><a href="#">SHOP</a></li>
-			        <li><a href="#">BLOG</a></li>
-			        <li><a href="#">CONTACT</a></li>
-			      </ul>
+			      <a href="#" class="right"><i class="material-icons gris" id="menu-icono">menu</i></a>
+			      <!--  <ul class="right hide-on-med-and-down">
+			        <li><a class="gris" href="#about">About</a></li>
+			        <li><a class="gris" href="#tools">Tools</a></li>
+			        <li><a class="gris" href="#skills">Skills</a></li>
+			        <li><a class="gris" href="#portfolio">Portfolio</a></li>
+			        <li><a class="gris" href="#contact">Contact</a></li>
+			      </ul> -->
 				</div>
 		    </div>
 		</nav>
 	</div>
+	<div class="entering-nav center">
+		<i class="material-icons equis">close</i>
+		<ul id="entering-nav">
+			<li><a class="hacer-slide" href="#about">About</a></li>
+			<li><a class="hacer-slide" href="#tools">Tools</a></li>
+			<li><a class="hacer-slide" href="#skills">Skills</a></li>
+			<li><a class="hacer-slide" href="#portfolio">Portfolio</a></li>
+			<li><a class="hacer-slide" href="#contact">Contact</a></li>
+		</ul>
+	</div>
 
 	<section class="header center">
-		<div id="triangle" class="triangle-left"></div> 
-		<div id="triangle" class="rotado-right"></div>
+		<!-- <div id="triangle" class="triangle-left"></div>  -->
+		<!-- <div id="triangle" class="rotado-right"></div> -->
 		<div class="square">
 			<img class="logo-bere responsive-img" src="assets/img/bere-logo.png" alt="click me">
-			<img class="front" src="assets/img/Front-end-developer.png" alt="">
+			<img class="front" src="assets/img/Front-end-developer.png" alt=""> 
 		</div>
 	</section>
 
@@ -54,136 +58,144 @@
 	</section>
 
 	<section id="about" class="about center">
-		<!-- <img src="assets/img/About-me.png" alt=""> -->
 		<div class="row">
-			<!--  <div class="col l8 offset-l2 m12 12"> -->
-			<div class="col l6 m12 s12 about-text">
-				<p>I'm <span>Berenisse Rios</span> a <span>front-end developer </span> from Miami, FL based in <span>Santiago</span>. I am passionate about <span>technology</span>, continuous learning and collaboration. I am <span>detailed</span> oriented and work well under pressure. I can <span>communicate</span> well between groups and enjoy facing new <span>challenges</span> because I can improve myself and my skills. In my free time you can find me either taking Japanese courses, reading articles about entrepreneurship or eating hummus with pita chips.</p>
+			<div class="col l6 m6 s12 about-title hide-on-med-and-up">
+				<img class="responsive-img" src="assets/img/About-Me.jpg" alt="">
 			</div>
-			<div class="col l6 m12 s12 about-title">
-				<img class="responsive-img" src="assets/img/about-green.jpg" alt="">
+			<div class="col l6 m6 s12 about-text">
+				<p>I'm <span>Berenisse Rios</span> a <span>front-end developer </span> from Miami, FL based in <span>Santiago</span>. I am passionate about <span>technology</span>, continuous learning and <span>collaboration</span>. I am <span>detailed</span> oriented and work well under pressure. I can <span>communicate</span> well between groups and enjoy facing new <span>challenges</span> because I can improve myself and my skills.</p>
+			</div>
+			<div class="col l6 m6 s12 about-title hide-on-small-only">
+				<img class="responsive-img" src="assets/img/About-Me.jpg" alt="">
 			</div>
 		</div>
-		
 	</section>
 
-	<section id="skills" class="skills">
+	<section id="tools" class="skills">
 		<!--  <div class="triangle amarillo triangle-skills"></div> -->
 		<div class="row">
 			<div class="col l6 m6 s12 skills-img">
-				<img class="responsive-img" src="assets/img/Bere-Office-Work.jpg" alt="">
+				<img class="responsive-img" src="assets/img/Technical-Tools.jpg" alt="">
 			</div>
 			<div class="col l6 m6 s12 iconos-skills">
-				<!-- <h1 class="center">Tools & Skills</h1> -->
-				<i class="devicon-javascript-plain"></i>
-				<i class="devicon-css3-plain "></i>
-				<i class="devicon-html5-plain"></i>
-				<i class="devicon-bootstrap-plain"></i>
-				<i class="devicon-gulp-plain"></i>
-				<i class="devicon-jquery-plain"></i>
-				<i class="devicon-sass-original"></i>
-				<i class="devicon-trello-plain"></i>
-				<i class="devicon-wordpress-plain"></i>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-javascript-plain"></i>
+					<h5>JavaScript</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-css3-plain "></i>
+					<h5>CSS3</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-html5-plain"></i>
+					<h5>HTML5</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-bootstrap-plain"></i>
+					<h5>Bootstrap</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<img class="responsive-img" src="assets/img/materialize.png" alt="">
+					<h5>Materialize</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-gulp-plain"></i>
+					<h5>Gulp</h5>
+				</div>
+
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-jquery-plain"></i>
+					<h5>jQuery</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-sass-original"></i>
+					<h5>Sass</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-trello-plain"></i>
+					<h5>Trello</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-wordpress-plain"></i>
+					<h5>Wordpress</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-github-plain"></i>
+					<h5>GitHub</h5>
+				</div>
+				<div class="col l4 m4 s4 center">
+					<i class="devicon-slack-plain"></i>
+					<h5>Slack</h5>
+				</div>
+
 			</div>
 		</div>
 	</section>
 
-	<div class="portfolio" id="portfolio">
-		<div class="triangle"></div>
-		<h1 class="center">Portfolio</h1>
-		
-		<section id="grid" class="grid clearfix">
-			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="arriba">
-				<figure>
-					<img src="assets/img/kiva.png"/>
-					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-					<figcaption>
-						<h2>Pinterest</h2>
-						<p>Modest replica of Pinterest</p>
-						<button>Demo</button>
-						<button class="btn-code">Code</button>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" >
-				<figure>
-					<img src="assets/img/kiva.png"/>
-					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-					<figcaption>
-						<h2>PhotoLab</h2>
-						<p>Two greens tigernut soybean radish.</p>
-						<button>Demo</button>
-						<button class="btn-code">Code</button>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="arriba">
-				<figure>
-					<img src="assets/img/kiva.png"/>
-					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-					<figcaption>
-						<h2>Kiva Gourmet</h2>
-						<p>Beetroot water spinach okra water.</p>
-						<button>Demo</button>
-						<button class="btn-code">Code</button>
-					</figcaption>
-				</figure>
-			</a>
-		 
-			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas arriba">
-				<figure>
-					<img src="assets/img/kiva.png"/>
-					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-					<figcaption>
-						<h2>Pinterest</h2>
-						<p>Soko radicchio bunya nuts gram dulse.</p>
-						<button>Demo</button>
-						<button class="btn-code">Code</button>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas">
-				<figure>
-					<img src="assets/img/kiva.png"/>
-					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-					<figcaption>
-						<h2>PhotoLab</h2>
-						<p>Two greens tigernut soybean radish.</p>
-						<button>Demo</button>
-						<button class="btn-code">Code</button>
-					</figcaption>
-				</figure>
-			</a>
-			<a href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z" class="mas-cajas arriba">
-				<figure>
-					<img src="assets/img/kiva.png"/>
-					<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,82.375991 0,144.77966 0,0 180,0 Z"/></svg>
-					<figcaption>
-						<h2>Kiva Gourmet</h2>
-						<p>Beetroot water spinach okra water.</p>
-						<button>Demo</button>
-						<button class="btn-code">Code</button>
-					</figcaption>
-				</figure>
-			</a>
-		</section>
-
-		<!-- view more button -->
-		<div class="row center mt-50">
-			<div class="codrops-demos col l12 m12 s12">
-				<a id="view-more">View more</a>
-				<a id="view-less" class="desaparecer">View less</a>
+	<section id="skills" class="about center">
+		<div class="row">
+			<div class="col l6 m6 s12 about-title hide-on-med-and-up">
+				<img class="responsive-img" src="assets/img/Personal-Skills.jpg" alt="">
+			</div>
+			<div class="col l6 m6 s12 about-text">
+				<p><i class="fa fa-check-square-o" aria-hidden="true"></i>   Agile methodology learner</p>
+				<p><i class="fa fa-check-square-o" aria-hidden="true"></i>   Problem solver</p>
+				<p><i class="fa fa-check-square-o" aria-hidden="true"></i>   Native English speaker</p>
+				<p><i class="fa fa-check-square-o" aria-hidden="true"></i>   Creative</p>
+				<p><i class="fa fa-check-square-o" aria-hidden="true"></i>   Flexible to change</p>
+			</div>
+			<div class="col l6 m6 s12 about-title hide-on-small-only">
+				<img class="responsive-img" src="assets/img/Personal-Skills.jpg" alt="">
 			</div>
 		</div>
-	</div><!-- /container -->
+	</section>
+
+	<div class="portfolio row" id="portfolio">
+		<h1 class="center"> < Portfolio > </h1>
+		<div class="col l4 m4 s12 portfolio-item white-text">
+			<img class="responsive-img" src="assets/img/HestiaPro.jpg" alt="">
+			<div class="portfolio-item-hover center impar">
+				<h3>Titulo</h3>
+			</div>
+		</div>
+		<div class="col l4 m4 s12 portfolio-item white-text">
+			<img class="responsive-img" src="assets/img/LabCar.jpg" alt="">
+			<div class="portfolio-item-hover center par">
+				<h3>Titulo</h3>
+			</div>
+		</div>
+		<div class="col l4 m4 s12 portfolio-item white-text">
+			<img class="responsive-img" src="assets/img/LabStudio.jpg" alt="">
+			<div class="portfolio-item-hover center impar">
+				<h3>Titulo</h3>
+			</div>
+		</div>
+		<div class="col l4 m4 s12 portfolio-item white-text">
+			<img class="responsive-img" src="assets/img/HestiaPro.jpg" alt="">
+			<div class="portfolio-item-hover center par">
+				<h3>Titulo</h3>
+			</div>
+		</div>
+		<div class="col l4 m4 s12 portfolio-item white-text">
+			<img class="responsive-img" src="assets/img/LabCar.jpg" alt="">
+			<div class="portfolio-item-hover center impar">
+				<h3>Titulo</h3>
+			</div>
+		</div>
+		<div class="col l4 m4 s12 portfolio-item white-text">
+			<img class="responsive-img" src="assets/img/LabStudio.jpg" alt="">
+			<div class="portfolio-item-hover center par">
+				<h3>Titulo</h3>
+			</div>
+		</div>
+	</div>
 
 	<section class="contact center" id="contact">
-		<div class="triangle amarillo"></div>
-		<h1 class="center">Contact Me</h1>
+		<h1 class="center"> < Contact Me > </h1>
 		<h6>You can reach me or see more of my work here:</h6>
-		<i class="fa fa-github-square fa-3x" aria-hidden="true"></i>
-		<i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-		<i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+		<a href="https://github.com/berenisser"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+		<a href="mailto:berenisser@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+		<a href="https://www.linkedin.com/in/berenisse-rios-70ba3a145/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
 	</section>
 
 	<section class="pie">

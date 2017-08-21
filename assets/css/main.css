@@ -14,22 +14,61 @@ nav {
     padding: 0 30px; }
   nav .brand-logo {
     font-size: 18px; }
+  nav .nav-wrapper {
+    background-color: #0C4D4F;
+    opacity: 0; }
+    nav .nav-wrapper #menu-icono {
+      cursor: pointer; }
+      nav .nav-wrapper #menu-icono:hover {
+        color: #D9B2B3; }
   nav .nav-wrapper li a {
-    font-size: 12px;
-    color: black; }
+    font-size: 1.1rem;
+    pointer: cursor;
+    color: #fff; }
+
+/*entering Nav*/
+.entering-nav {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #0C4D4F;
+  transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  padding: 15% 0; }
+  .entering-nav .equis {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    color: #fff;
+    cursor: pointer; }
+    .entering-nav .equis:hover {
+      color: #D9B2B3; }
+  .entering-nav li a {
+    font-size: 2.5rem;
+    padding: .4em 0.6em;
+    color: #fff;
+    text-decoration: none; }
+    .entering-nav li a:hover {
+      color: #D9B2B3;
+      text-decoration: underline; }
 
 .header {
   /*background-color: #BFB5AA;*/
-  background: url(../img/portafolio-1.jpg) 50% 50%/100% no-repeat fixed;
-  background: cover;
-  background-position: center;
+  background-image: url(../img/portafolio-1.jpg);
+  padding-top: 90px;
+  margin-top: -64px;
   height: 100vh;
-  padding: 150px;
-  margin-top: -64px; }
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
   .header .square {
     width: 800px;
     height: 600px;
-    border: 5px solid #fff;
+    border: 1px solid #fff;
     margin: 0 auto;
     z-index: 1000; }
   .header .logo-bere {
@@ -38,9 +77,9 @@ nav {
     top: 25%;
     left: 25%;
     transform: translate3d(-20%, -25%, 0);
-    z-index: 9999; }
+    z-index: 5000; }
   .header .front {
-    float: right;
+    float: left;
     margin-top: 350px;
     width: 50%; }
   .header #triangle {
@@ -64,14 +103,14 @@ nav {
     top: 0; }
 
 .phrase {
-  padding: 15%; }
+  padding: 9%; }
 
 .about {
   background-color: rgba(0, 131, 126, 0.4); }
   .about .row {
     margin: 0; }
     .about .row .about-text {
-      padding: 8% 5% 5% 5%;
+      padding: 12% 5% 5% 5%;
       margin: 0; }
     .about .row .about-title {
       margin: 0;
@@ -81,14 +120,9 @@ nav {
   .about p {
     font-size: 1.5rem;
     font-family: 'Quicksand', sans-serif; }
-  .about span {
-    font-size: 1.8rem;
-    font-weight: bold; }
-
-.contact {
-  padding: 170px 0; }
-  .contact h1 {
-    margin-top: 100px; }
+    .about p span {
+      font-size: 1.8rem;
+      font-weight: bold; }
 
 .skills {
   background-color: rgba(131, 0, 5, 0.3); }
@@ -99,13 +133,60 @@ nav {
     .skills .skills-img img {
       margin-bottom: -6px; }
   .skills .iconos-skills {
-    padding: 10%; }
+    padding: 2%; }
+    .skills .iconos-skills div {
+      padding: 2%; }
+      .skills .iconos-skills div img {
+        max-height: 67px; }
+      .skills .iconos-skills div h5 {
+        font-size: 1.2rem; }
+      .skills .iconos-skills div:hover {
+        background-color: rgba(131, 0, 5, 0.3);
+        color: #fff;
+        cursor: pointer; }
   .skills h1 {
     padding-top: 50px; }
   .skills i {
     font-size: 5rem;
-    padding: 20px 10px;
     color: white; }
+
+/* Individual styles */
+.portfolio {
+  background-color: #fff;
+  padding: 50px 0; }
+  .portfolio h1 {
+    margin-bottom: 4.68rem; }
+  .portfolio .portfolio-item {
+    padding: 0;
+    position: relative; }
+    .portfolio .portfolio-item .portfolio-item-hover {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      opacity: 0; }
+      .portfolio .portfolio-item .portfolio-item-hover:hover {
+        opacity: 1; }
+    .portfolio .portfolio-item .impar {
+      background-color: rgba(12, 77, 79, 0.9); }
+    .portfolio .portfolio-item .par {
+      background-color: rgba(79, 14, 12, 0.9); }
+
+.contact {
+  padding: 130px 20px;
+  background-color: rgba(131, 0, 5, 0.3); }
+  .contact h6 {
+    margin: .5rem 0 1.6rem 0;
+    font-size: 1.5rem;
+    margin-bottom: 2.6rem; }
+  .contact a {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px; }
+    .contact a:hover {
+      color: rgba(79, 14, 12, 0.9); }
 
 .triangle {
   width: 0;
@@ -117,13 +198,6 @@ nav {
   margin: 0 auto;
   position: relative;
   margin-top: -50px; }
-
-.amarillo {
-  border-top: 50px solid rgba(131, 0, 5, 0.3);
-  margin-top: -170px; }
-
-.about-triangle {
-  margin-top: -120px; }
 
 .triangle-skills {
   margin-top: -150px; }
@@ -141,231 +215,63 @@ nav {
   display: none; }
 
 .pie {
-  background-color: #87888C;
+  background-color: #0C4D4F;
   color: #fff;
   padding: 15px 0; }
 
-/* Demos.css*/
-*, *:after, *:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+@media (min-width: 1px) and (max-width: 425px) {
+  .header {
+    background-position: 70% 25%; }
+    .header .square {
+      width: 354px;
+      height: 476px; }
 
-a, button {
-  outline: none; }
+  .phrase h1 {
+    font-size: 2.5rem; }
 
-a {
-  color: #f0f0f0;
-  text-decoration: none;
-  cursor: pointer; }
+  .about .row .about-text {
+    padding: 12% 10%; }
+  .about p {
+    font-size: 1.4rem; }
+    .about p span {
+      font-size: 1.7rem; }
 
-i {
-  cursor: pointer; }
+  .portfolio h1 {
+    font-size: 2.5rem; }
 
-a:hover, a:focus {
-  color: #333; }
+  .contact h1 {
+    font-size: 2.5rem; } }
+@media (min-width: 1px) and (max-width: 320px) {
+  .skills .iconos-skills {
+    padding: 5%; }
+    .skills .iconos-skills div img {
+      padding: 12px 0 6px; } }
+@media (min-width: 321px) and (max-width: 375px) {
+  .skills .iconos-skills {
+    padding: 5%; }
+    .skills .iconos-skills div img {
+      padding-top: 9px; } }
+@media (min-width: 376px) and (max-width: 425px) {
+  .skills .iconos-skills {
+    padding: 5%; }
+    .skills .iconos-skills div img {
+      padding-top: 1.5px; } }
+@media (min-width: 426px) and (max-width: 768px) {
+  .header .square {
+    width: 676px;
+    height: 600px; }
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
+  .about .row .about-text {
+    padding: 8% 5% 5% 5%; }
+  .about p {
+    font-size: 1.1rem; }
+    .about p span {
+      font-size: 1.4rem; }
 
-.clearfix:after {
-  clear: both; }
-
-.codrops-header {
-  margin: 0 auto;
-  padding: 2em;
-  text-align: center; }
-  .codrops-header h1 {
-    margin: 0;
-    font-weight: 300;
-    font-size: 2.5em;
-    line-height: 1.3; }
-
-/* Demo Buttons Style */
-.codrops-demos {
-  padding-top: 1em;
-  font-size: 0.8em; }
-  .codrops-demos a {
-    display: inline-block;
-    margin: 0.5em;
-    padding: 0.7em 1.1em;
-    outline: none;
-    border: 2px solid #333;
-    color: #333;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700; }
-  .codrops-demos:hover {
-    border-color: #fff;
-    color: #fff; }
-
-/* component.css */
-/* Common style */
-.grid {
-  margin: 40px auto 0;
-  max-width: 999px;
-  width: 90%; }
-  .grid a {
-    float: left;
-    max-width: 333px;
-    width: 33.333333%;
-    color: #333; }
-  .grid .arriba {
-    margin: 30px 0 -30px 0; }
-  .grid figure {
-    position: relative;
-    overflow: hidden;
-    margin: 5px;
-    background: #333; }
-    .grid figure img {
-      position: relative;
-      display: block;
-      width: 100%;
-      opacity: 0.7;
-      -webkit-transition: opacity 0.3s;
-      transition: opacity 0.3s; }
-    .grid figure button {
-      position: absolute;
-      padding: 4px 20px;
-      border: none;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: bold;
-      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-      transition: opacity 0.3s, transform 0.3s; }
-  .grid figcaption {
-    position: absolute;
-    top: 0;
-    z-index: 11;
-    padding: 14px;
-    width: 100%;
-    height: 100%;
-    text-align: center; }
-    .grid figcaption h2 {
-      margin: 0 0 20px 0;
-      color: #F4D131;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: bold;
-      font-size: 120%;
-      -webkit-transition: -webkit-transform 0.3s;
-      transition: transform 0.3s; }
-    .grid figcaption p {
-      padding: 0 20px;
-      color: #434446;
-      font-weight: 300;
-      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-      transition: opacity 0.3s, transform 0.3s; }
-
-.grid figcaption h2,
-.grid figcaption p {
-  -webkit-transform: translateY(25px);
-  transform: translateY(25px); }
-
-.grid figcaption,
-.grid figcaption h2,
-.grid figcaption p,
-.grid figure button {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-/* Style for SVG */
-.grid svg {
-  position: absolute;
-  top: -1px;
-  /* fixes rendering issue in FF */
-  z-index: 10;
-  width: 100%;
-  height: 100%; }
-
-.grid svg path {
-  fill: #fff; }
-
-/* Hover effects */
-.grid a:hover figure img {
-  opacity: 1; }
-
-.grid a:hover figcaption h2,
-.grid a:hover figcaption p {
-  -webkit-transform: translateY(0);
-  transform: translateY(0); }
-
-.grid a:hover figcaption p {
-  opacity: 0; }
-
-/* Individual styles */
-.portfolio {
-  background-color: rgba(0, 131, 126, 0.4);
-  padding: 50px 0; }
-
-.portfolio .grid figure button {
-  top: 40%;
-  left: 50%;
-  border: 3px solid #fff;
-  background: #87888C;
-  color: #fff;
-  opacity: 0;
-  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
-  transform: translateY(-50%) translateX(-50%) scale(0.25); }
-
-.portfolio .grid figure button.btn-code {
-  top: 60%;
-  left: 50%;
-  border: 3px solid #fff;
-  background: #87888C;
-  color: #fff;
-  opacity: 0;
-  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
-  transform: translateY(-50%) translateX(-50%) scale(0.25); }
-
-.portfolio .grid a:hover figure button {
-  opacity: 1;
-  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
-  transform: translateY(-50%) translateX(-50%) scale(1); }
-
-/* Media Queries */
-/* Let's redefine the width of each anchor and the margins */
-@media screen and (max-width: 58em) {
-  .grid a {
-    width: 33.333%; }
-
-  .grid a:nth-child(odd) {
-    margin: 0; }
-
-  .grid a:nth-child(3n-1) {
-    margin: 30px 0 -30px 0; } }
-@media screen and (max-width: 45em) {
-  .grid {
-    max-width: 500px; }
-
-  .grid a {
-    width: 50%; }
-
-  .grid a:nth-child(3n-1) {
-    margin: 0; }
-
-  .grid a:nth-child(even) {
-    margin: 30px 0 -30px 0; }
-
-  .grid figcaption h2 {
-    margin-bottom: 0px;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px); }
-
-  .grid figcaption p {
-    margin: 0;
-    padding: 0 10px; } }
-@media screen and (max-width: 27em) {
-  .grid {
-    max-width: 250px; }
-
-  .grid a {
-    width: 100%; }
-
-  .grid a:nth-child(even) {
-    margin: 0; } }
+  .skills .iconos-skills {
+    padding: 2.7%; }
+    .skills .iconos-skills div:nth-child(even) {
+      padding: 2%;
+      background-color: rgba(0, 131, 126, 0.4); } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,118 @@
+@media (min-width: 1px) and (max-width:425px){
+	.header{
+		background-position: 70% 25%;
+		.square{
+			width: 354px;
+			height: 476px;
+		}
+	}
+
+	.phrase{
+		h1{
+			font-size: 2.5rem;
+		}
+	}
+
+	.about{
+		.row{
+			.about-text{
+				padding: 12% 10%;
+			}
+		}
+		p{
+			font-size: 1.4rem;
+			span{
+				font-size: 1.7rem;
+			}
+		}
+	}
+
+	.portfolio{
+		h1{
+			font-size: 2.5rem;
+		}
+	}
+
+	.contact{
+		h1{
+			font-size: 2.5rem;
+		}
+	}
+}
+
+//Smallest phone view
+@media (min-width: 1px) and (max-width:320px){
+	.skills{
+		.iconos-skills{
+			padding: 5%;
+			div{
+				img{
+					padding: 12px 0 6px;
+				}
+			}
+			div:nth-child(even){
+
+			}
+		}
+	}
+}
+
+@media (min-width: 321px) and (max-width:375px){
+	.skills{
+		.iconos-skills{
+			padding: 5%;
+			div{
+				img{
+					padding-top: 9px;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 376px) and (max-width:425px){
+	.skills{
+		.iconos-skills{
+			padding: 5%;
+			div{
+				img{
+					padding-top: 1.5px;
+				}
+			}
+		}
+	}
+}
+
+//Only tablet
+@media (min-width: 426px) and (max-width:768px){
+	.header{
+		.square{
+			width: 676px;
+			height: 600px;
+		}
+	}
+	.about{
+		.row{
+			.about-text{
+				padding: 8% 5% 5% 5%;
+			}
+		}
+		p{
+			font-size: 1.1rem;
+			span{
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	.skills{
+		.iconos-skills{
+			padding: 2.7%;
+			div:nth-child(even) {
+				padding: 2%;
+				background-color: $fondo_azul;
+			}
+		}
+
+	}
+}
