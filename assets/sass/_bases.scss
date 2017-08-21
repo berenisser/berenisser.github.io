@@ -246,7 +246,14 @@ nav{
 	}
 }
 
+.pie{
+	background-color: $fondo_oscuro;
+	color: #fff;
+	padding: 15px 0;
+}
 
+
+/*********/
 
 .triangle {
 	width: 0;
@@ -278,10 +285,4 @@ nav{
 
 .desaparecer{
 	display: none;
-}
-
-.pie{
-	background-color: $fondo_oscuro;
-	color: #fff;
-	padding: 15px 0;
 }
