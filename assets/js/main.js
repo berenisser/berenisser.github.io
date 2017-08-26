@@ -31,9 +31,21 @@ $(document).ready(function(){
 	    $( this ).addClass( "animated fadeIn" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$(this).removeClass('animated fadeIn');
 	    });
+	    $('.titulo_hover').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	    	$(this).removeClass('animated fadeInDown');
+	    });
+	    $('.botones_section').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	    	$(this).removeClass('animated fadeInUp');
+	    });
 	  }, function() {
 	    $( this ).addClass( "animated fadeOut" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$(this).removeClass('animated fadeOut');
+	    });
+	    $('.titulo_hover').addClass( "animated fadeOutUp" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	    	$('.titulo_hover').removeClass('animated fadeOutUp');
+	    });
+	    $('.botones_section').addClass('animated fadeOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	    	$(this).removeClass('animated fadeOutDown');
 	    });
 	  }
 	);

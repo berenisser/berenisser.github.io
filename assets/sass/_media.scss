@@ -1,9 +1,20 @@
 @media (min-width: 1px) and (max-width:425px){
 	.header{
-		background-position: 70% 25%;
+		background-position: 50% 50%;
 		.square{
-			width: 354px;
+			width: 278px;
 			height: 476px;
+			border: 1px solid transparent;
+		}
+	}
+
+	.entering-nav{
+		padding: 45% 0;
+		img{
+			width: 30%;
+			position: relative;
+			left: 5;
+			top: 5;
 		}
 	}
 
@@ -42,6 +53,13 @@
 
 //Smallest phone view
 @media (min-width: 1px) and (max-width:320px){
+	.header{
+		background-position: 50% 50%;
+		.square{
+			width: 278px;
+			height: 476px;
+		}
+	}
 	.skills{
 		.iconos-skills{
 			padding: 5%;
@@ -108,10 +126,10 @@
 	.skills{
 		.iconos-skills{
 			padding: 2.7%;
-			div:nth-child(even) {
+			/*div:nth-child(even) {
 				padding: 2%;
 				background-color: $fondo_azul;
-			}
+			}*/
 		}
 
 	}

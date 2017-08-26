@@ -49,6 +49,12 @@ nav{
 	background: $fondo_oscuro;
 	transition: background-color 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 	padding: 15% 0;
+	img{
+		width: 10%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
 	.equis{
 		position: absolute;
 		right: 30px;
@@ -137,7 +143,7 @@ nav{
 	.row{
 		margin: 0;
 		.about-text{
-			padding: 12% 5% 5% 5%;
+			padding: 10% 5% 5% 5%;
 			margin: 0;
 		}
 		.about-title{
@@ -172,7 +178,7 @@ nav{
 		}
 	}
 	.iconos-skills{
-		padding: 2%;
+		padding: 1.5%;
 		div{
 			padding: 2%;
 			img{
@@ -195,6 +201,13 @@ nav{
 		font-size: 5rem;
 		color: white;
 	}
+	
+}
+
+#skills{
+	p{
+		margin: 3% 0%;
+	}
 }
 
 /* Individual styles */
@@ -207,6 +220,9 @@ nav{
 	.portfolio-item{
 		padding: 0;
 		position: relative;
+		img{
+
+		}
 		.portfolio-item-hover{
 			position: absolute;
 			top: 0;
@@ -215,8 +231,48 @@ nav{
 			right: 0;
 			z-index: 100;
 			opacity: 0;
+			padding-top: 17%;
 			&:hover{
 				opacity: 1;
+			}
+			.titulo_hover{
+				h3{
+					margin-bottom: 0.170rem;
+				}
+				p{
+					margin-bottom: 1.168rem;
+				}
+			}
+			.botones_section{
+				.botones{
+					.btn_demo{
+						display: inline-block;
+						text-decoration: none;
+						color: white;
+						font-weight: bold;
+						border: 1px solid white;
+						padding: 10px 30px;
+						&:hover{
+							background-color: white;
+							color: $azul_hover;
+						}
+					}
+					.rojo{
+						&:hover{
+							background-color: white;
+							color: $rojo_hover;
+						}
+					}
+				}
+				.iconos_empleados{
+					display: inline-block;
+					i{
+						font-size: 2rem;
+					}
+					img{
+						width: 11%;
+					}
+				}
 			}
 		}
 		.impar{
