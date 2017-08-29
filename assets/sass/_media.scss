@@ -1,6 +1,6 @@
 @media (min-width: 1px) and (max-width:425px){
 	.header{
-		background-position: 50% 50%;
+		background-position: center;
 		background-image: url(../img/portafolio_mobile.jpg);
 		.square{
 			width: 278px;
@@ -55,7 +55,7 @@
 //Smallest phone view
 @media (min-width: 1px) and (max-width:320px){
 	.header{
-		background-position: 50% 50%;
+		background-position: center;
 		background-image: url(../img/portafolio_mobile.jpg);
 		.square{
 			width: 278px;
