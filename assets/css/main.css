@@ -68,8 +68,7 @@ nav {
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-repeat: no-repeat; }
   .header .square {
     width: 800px;
     height: 600px;
@@ -254,8 +253,8 @@ nav {
 
 @media (min-width: 1px) and (max-width: 425px) {
   .header {
-    background-position: center;
-    background-image: url(../img/portafolio_mobile.jpg); }
+    background-image: url(../img/portafolio_mobile.jpg);
+    width: 100%; }
     .header .square {
       width: 278px;
       height: 476px;
@@ -286,7 +285,7 @@ nav {
     font-size: 2.5rem; } }
 @media (min-width: 1px) and (max-width: 320px) {
   .header {
-    background-position: center;
+    width: 100%;
     background-image: url(../img/portafolio_mobile.jpg); }
     .header .square {
       width: 278px;
