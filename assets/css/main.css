@@ -285,7 +285,7 @@ nav {
     font-size: 2.5rem; } }
 @media (min-width: 1px) and (max-width: 320px) {
   .header {
-    background-position: 50% 50%; }
+    background-position: 100%; }
     .header .square {
       width: 278px;
       height: 476px; }

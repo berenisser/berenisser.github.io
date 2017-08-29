@@ -12,41 +12,28 @@ $(document).ready(function(){
 		$('.entering-nav').slideUp("slow");
 	});
 
-	//View more
-	$('#view-more').click(function() {
-	    $('.mas-cajas').toggleClass( "aparecer");
-	    $('#view-more').hide();
-	    $('#view-less').show();
-	});
-
-	$('#view-less').click(function() {
-		$('.mas-cajas').toggleClass( "desaparecer");
-		$('#view-more').show();
-		$(this).hide();
-	});
-
 	//Hover on portfolio
 	$(".portfolio-item-hover").hover(
 	  function() {
 	    $( this ).addClass( "animated fadeIn" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$(this).removeClass('animated fadeIn');
 	    });
-	    $('.titulo_hover').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	    /*$('.titulo_hover').addClass('animated fadeInDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$(this).removeClass('animated fadeInDown');
 	    });
 	    $('.botones_section').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$(this).removeClass('animated fadeInUp');
-	    });
+	    });*/
 	  }, function() {
 	    $( this ).addClass( "animated fadeOut" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$(this).removeClass('animated fadeOut');
 	    });
-	    $('.titulo_hover').addClass( "animated fadeOutUp" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+	    /*$('.titulo_hover').addClass( "animated fadeOutUp" ).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$('.titulo_hover').removeClass('animated fadeOutUp');
 	    });
 	    $('.botones_section').addClass('animated fadeOutDown').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
 	    	$(this).removeClass('animated fadeOutDown');
-	    });
+	    });*/
 	  }
 	);
 
