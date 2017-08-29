@@ -109,6 +109,13 @@ nav {
 .only_telefono {
   padding: 0;
   margin-top: -56px; }
+  .only_telefono .logo-bere {
+    height: 18%;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    transform: translate3d(-20%, -25%, 0);
+    z-index: 5000; }
 
 .phrase {
   padding: 9%; }
